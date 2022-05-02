@@ -33,21 +33,21 @@
 
     <!-- Main Window -->
     <div class="rounded-md overflow-hidden mx-auto w-2/3 my-10 mobile:w-full" >
-      <h1 class="mobile:text-xl text-slate-100 text-center mb-10 desktop:text-3xl tablet:text-2xl">We can find the cheapest <i class="fa-solid fa-plane"></i> tickets</h1>
+      <h1 class="mobile:text-xl text-slate-100 text-center mb-10 desktop:text-3xl tablet:text-2xl px-2">We can find the cheapest <i class="fa-solid fa-plane"></i> tickets</h1>
       <!-- Countries -->
         <div class="flex justify-center flex-col items-center">
-          <input type="text" class="block w-2/3 bg-white bg-opacity-10 border-r-4 shadow-xl border-transparent focus:border-slate-400 py-4 px-4 placeholder:text-slate-500 outline-none text-slate-200 transition-colors text-xl" placeholder="From?">
-          <input type="text" class="block w-2/3 bg-white bg-opacity-10 border-r-4 shadow-xl border-transparent focus:border-slate-400 py-4 px-4 placeholder:text-slate-500 outline-none text-slate-200 transition-colors text-xl mt-8" placeholder="Where?">
+          <input type="text" class="block tablet:w-1/3 bg-white bg-opacity-10 border-r-4 shadow-xl border-transparent focus:border-slate-400 py-4 px-4 placeholder:text-slate-500 outline-none text-slate-200 transition-colors text-xl mobile:w-full" placeholder="From?">
+          <input type="text" class="block tablet:w-1/3 bg-white bg-opacity-10 border-r-4 shadow-xl border-transparent focus:border-slate-400 py-4 px-4 placeholder:text-slate-500 outline-none text-slate-200 transition-colors text-xl mt-8 mobile:w-full" placeholder="Where?">
         </div>
       <!-- Dates -->
         <div class="flex justify-center items-center flex-col">
           <label for="depart" class="mt-10 text-xl text-slate-50"><i class="fa-solid fa-plane-departure"></i> Depart Date</label>
-          <input id="depart" type="date" class="block w-2/3 bg-white bg-opacity-10 border-r-4 shadow-xl border-transparent focus:border-slate-400 py-3 px-4 placeholder:text-slate-500 outline-none text-slate-50 transition-colors text-xl mt-4">
+          <input id="depart" type="date" class="block tablet:w-1/3 bg-white bg-opacity-10 border-r-4 shadow-xl border-transparent focus:border-slate-400 py-3 px-4 placeholder:text-slate-500 outline-none text-slate-50 transition-colors text-xl mt-4 mobile:w-full">
           <label for="depart" class="mt-10 text-xl text-slate-50"><i class="fa-solid fa-plane-arrival"></i> Return Date</label>
-          <input id="return" type="date" class="block w-2/3 bg-white bg-opacity-10 border-r-4 shadow-xl border-transparent focus:border-slate-400 py-3 px-4 placeholder:text-slate-500 outline-none text-slate-50 transition-colors text-xl mt-4">
+          <input id="return" type="date" class="block tablet:w-1/3 bg-white bg-opacity-10 border-r-4 shadow-xl border-transparent focus:border-slate-400 py-3 px-4 placeholder:text-slate-500 outline-none text-slate-50 transition-colors text-xl mt-4 mobile:w-full">
         </div>
         <!-- Btns -->
-        <div class="flex items-center justify-between mx-auto w-2/3 mt-10 mobile:w-3/3">
+        <div class="flex items-center justify-between mx-auto w-1/3 mt-10 mobile:w-3/3">
           <button class="text-white bg-green-500 block py-2.5 tablet:px-10 mobile:px-4 hover:bg-green-700 font-bolt text-lg transition ease-in-out duration-200">Search <i class="fa-solid fa-magnifying-glass-location"></i></button>
           <button class="text-white bg-red-500 block py-2.5 tablet:px-10 mobile:px-4 hover:bg-red-700 font-bolt text-lg transition ease-in-out duration-200">Reset <i class="fa-solid fa-filter-circle-xmark"></i></button>
         </div>
