@@ -10,9 +10,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
   <title>Webpack test</title>
 </head>
-<body class="bg-slate-700">
+<body class="bg-slate-800">
   <!-- Header -->
-    <header class="text-white h-24 flex items-center bg-slate-800 shadow-md">
+    <header class="text-white h-24 flex items-center bg-slate-900 shadow-md">
       <div class="container mx-auto flex justify-between">
         <!-- Logo -->
         <div>
@@ -23,7 +23,7 @@
         </div>
         <!-- Money -->
         <div>
-          <select id="money" class="bg-slate-800 text-xl">
+          <select id="money" class="bg-slate-900 text-xl">
             <option value="us">$ US Dollar</option>
             <option value="ua">&#8372; UAH</option>
           </select>
@@ -33,7 +33,7 @@
 
     <!-- Main Window -->
     <div class="rounded-md overflow-hidden mx-auto w-2/3 my-10" >
-      <h1 class="text-3xl text-slate-100 text-center mb-10">We find the cheapest air tickets</h1>
+      <h1 class="text-3xl text-slate-100 text-center mb-10">We can find the cheapest <i class="fa-solid fa-plane"></i> tickets</h1>
       <!-- Countries -->
         <div class="flex justify-center flex-col items-center">
           <input type="text" class="block w-2/3 bg-white bg-opacity-10 border-r-4 shadow-xl border-transparent focus:border-slate-400 py-4 px-4 placeholder:text-slate-500 outline-none text-slate-200 transition-colors text-xl" placeholder="From?">
@@ -41,9 +41,9 @@
         </div>
       <!-- Dates -->
         <div class="flex justify-center items-center flex-col">
-          <label for="depart" class="mt-10 text-xl text-slate-50">Depart Date:</label>
+          <label for="depart" class="mt-10 text-xl text-slate-50"><i class="fa-solid fa-plane-departure"></i> Depart Date</label>
           <input id="depart" type="date" class="block w-2/3 bg-white bg-opacity-10 border-r-4 shadow-xl border-transparent focus:border-slate-400 py-3 px-4 placeholder:text-slate-500 outline-none text-slate-50 transition-colors text-xl mt-4">
-          <label for="depart" class="mt-10 text-xl text-slate-50">Return Date:</label>
+          <label for="depart" class="mt-10 text-xl text-slate-50"><i class="fa-solid fa-plane-arrival"></i> Return Date</label>
           <input id="return" type="date" class="block w-2/3 bg-white bg-opacity-10 border-r-4 shadow-xl border-transparent focus:border-slate-400 py-3 px-4 placeholder:text-slate-500 outline-none text-slate-50 transition-colors text-xl mt-4">
         </div>
         <!-- Btns -->
