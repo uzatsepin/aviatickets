@@ -22,7 +22,8 @@ module.exports = {
    }),
     new ESLintPlugin({
       files: './src/**/*.js',
-
+      emitError: false,
+      emitWarning: false,
     }),
   ],
   module: {
@@ -32,27 +33,31 @@ module.exports = {
         loader: 'html-loader',
       },
       {
-        test: /\.(sa|sc|c)ss$/,
-        use: [
-          (mode === 'development') ? 'style-loader' : MiniCssExtractPlugin.loader,
-          'css-loader',
-          {
-            loader: 'postcss-loader',
-            options: {
-              postcssOptions: {
-                plugins: [
-                  [
-                    'postcss-preset-env',
-                    {
-                      // options
-                    },
-                  ],
-                ],
-              },
-            },
-          },
-          'sass-loader'],
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader', 'postcss-loader'],
       },
+      // {
+      //   test: /\.(sa|sc|c)ss$/,
+      //   use: [
+      //     (mode === 'development') ? 'style-loader' : MiniCssExtractPlugin.loader,
+      //     'css-loader',
+      //     {
+      //       loader: 'postcss-loader',
+      //       options: {
+      //         postcssOptions: {
+      //           plugins: [
+      //             [
+      //               'postcss-preset-env',
+      //               {
+      //                 // options
+      //               },
+      //             ],
+      //           ],
+      //         },
+      //       },
+      //     },
+      //     'sass-loader'],
+      // },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: 'asset/resource',

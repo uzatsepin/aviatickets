@@ -4,10 +4,53 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
   <title>Webpack test</title>
 </head>
-<body>
-    <h1>test</h1>
-    <p>test 2</p>
+<body class="bg-slate-700">
+  <!-- Header -->
+    <header class="text-white h-24 flex items-center bg-slate-800 shadow-md">
+      <div class="container mx-auto flex justify-between">
+        <!-- Logo -->
+        <div>
+          <a href="#" class="h-8 w-8 ">
+            <i class="fa-solid fa-plane-arrival text-2xl hover:text-sky-500 transition ease-in-out delay-150"></i>
+            <span class="text-2xl pl-3 hover:text-sky-500 transition ease-in-out delay-150">AviaTickets</span>
+          </a>
+        </div>
+        <!-- Money -->
+        <div>
+          <select id="money" class="bg-slate-800 text-xl">
+            <option value="us">$ US Dollar</option>
+            <option value="ua">&#8372; UAH</option>
+          </select>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Window -->
+    <div class="rounded-md overflow-hidden mx-auto w-2/3 my-10" >
+      <h1 class="text-3xl text-slate-100 text-center mb-10">We find the cheapest air tickets</h1>
+      <!-- Countries -->
+        <div class="flex justify-center flex-col items-center">
+          <input type="text" class="block w-2/3 bg-white bg-opacity-10 border-r-4 shadow-xl border-transparent focus:border-slate-400 py-4 px-4 placeholder:text-slate-500 outline-none text-slate-200 transition-colors text-xl" placeholder="From?">
+          <input type="text" class="block w-2/3 bg-white bg-opacity-10 border-r-4 shadow-xl border-transparent focus:border-slate-400 py-4 px-4 placeholder:text-slate-500 outline-none text-slate-200 transition-colors text-xl mt-8" placeholder="Where?">
+        </div>
+      <!-- Dates -->
+        <div class="flex justify-center items-center flex-col">
+          <label for="depart" class="mt-10 text-xl text-slate-50">Depart Date:</label>
+          <input id="depart" type="date" class="block w-2/3 bg-white bg-opacity-10 border-r-4 shadow-xl border-transparent focus:border-slate-400 py-3 px-4 placeholder:text-slate-500 outline-none text-slate-50 transition-colors text-xl mt-4">
+          <label for="depart" class="mt-10 text-xl text-slate-50">Return Date:</label>
+          <input id="return" type="date" class="block w-2/3 bg-white bg-opacity-10 border-r-4 shadow-xl border-transparent focus:border-slate-400 py-3 px-4 placeholder:text-slate-500 outline-none text-slate-50 transition-colors text-xl mt-4">
+        </div>
+        <!-- Btns -->
+        <div class="flex items-center justify-between mx-auto w-2/3 mt-10">
+          <button class="text-white bg-green-500 block py-2.5 px-10 transition-colors hover:bg-green-700 font-bolt text-lg">Search <i class="fa-solid fa-magnifying-glass-location"></i></button>
+          <button class="text-white bg-red-500 block py-2.5 px-10 transition-colors hover:bg-red-700 font-bolt text-lg">Reset <i class="fa-solid fa-filter-circle-xmark"></i></button>
+        </div>
+    </div>
 </body>
 </html>
